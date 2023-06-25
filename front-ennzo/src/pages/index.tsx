@@ -18,14 +18,9 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div>
-          <p>Teste</p>
           <p>Clique no botão abaixo para realizar uma requisição dos dados da Database.</p>
           <ToggleDataButton/>
         </div>
-        <div>
-          < CreateUserForm />
-        </div>
-
       </main>
     </>
   )

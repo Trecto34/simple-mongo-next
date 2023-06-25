@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.label-text {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.submit-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #0070f3;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0053a5;
+}
+
+.message {
+  font-size: 1.2rem;
+}

@@ -1,9 +1,10 @@
-import CreateUserForm from './components/CreateUserForm';
+
+import AddBook from './components/AddBook';
 
 const CreateUserPage = () => {
   return (
     <div style={{ marginTop: '100px' }}>
-      <CreateUserForm />
+      <AddBook />
     </div>
   );
 };
