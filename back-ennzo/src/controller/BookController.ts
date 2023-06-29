@@ -55,6 +55,28 @@ class BookController {
 
     res.json(book);
   }
+
+  async createManually(req: Request, res: Response) {
+    const { name, author, publisher, year, industryIdentifiers } = req.body;
+
+    // Check if a book with the same industryIdentifiers already exists in the database
+    const existingBook = await BookModel.findOne({ name })
+    if (existingBook) {
+      res.status(409).send('Book already exists');
+      return;
+    }
+
+    // Create a new document using the Mongoose model and save it to the database
+    const book = await BookModel.create({
+      name,
+      author,
+      publisher,
+      year,
+      industryIdentifiers,
+    });
+
+    res.json(book);
+  }
 }
 
 export default new BookController();

@@ -24,7 +24,7 @@ const bookSchema = new mongoose.Schema<Book>({
   ],
 });
 
-bookSchema.index({ industryIdentifiers: 1 }, { unique: true });
+bookSchema.index({ industryIdentifiers: 1 }, { unique: false });
 
 const BookModel = mongoose.model<Book>('Book', bookSchema);
 

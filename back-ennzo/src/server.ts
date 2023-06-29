@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import jwt from 'jsonwebtoken'
 import routes from './routes';
 
 const app = express();
@@ -15,9 +16,7 @@ app.use((req, res, next) => {
   next();
 });
 
-
 app.use(routes)
-
 
 app.listen(3001, () => {
   console.log("Server Iniciado")

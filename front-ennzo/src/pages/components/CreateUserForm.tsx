@@ -78,11 +78,11 @@ const CreateUserForm = () => {
           onChange={handleChange}
         >
           <option value="" hidden>Selecione uma profissão</option>
-          <option value="Teacher">Professor</option>
-          <option value="Director">Diretor</option>
-          <option value="Secretary">Secretário</option>
-          <option value="Student">Estudante</option>
-          <option value="Parent">Pai/Mãe</option>
+          <option value="teacher">Professor</option>
+          <option value="director">Diretor</option>
+          <option value="secretary">Secretário</option>
+          <option value="student">Estudante</option>
+          <option value="parent">Pai/Mãe</option>
         </select>
       </div>
       {user.profession === "Teacher" && (
